@@ -1,5 +1,6 @@
 package com.mscategorias.service;
 
+import com.mscategorias.dto.CategoriaDTO;
 import com.mscategorias.dto.ListarCategoriaDTO;
 
 import java.util.List;
@@ -11,6 +12,7 @@ public interface CategoriaService {
     boolean existeCategoria(UUID id);
     List<ListarCategoriaDTO> obtenerNombresCategorias();
     public String obtenerNombrePorId(UUID id);
+    CategoriaDTO crearCategoria(CategoriaDTO categoriaDTO);
 
 
 }
